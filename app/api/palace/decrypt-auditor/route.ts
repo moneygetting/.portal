@@ -1,3 +1,0 @@
-import { NextRequest, NextResponse } from 'next/server'
-import { corsHeaders, decryptTicket } from '@/lib/palace/core'
-export async function POST(request: NextRequest) { if (!process.env.PALACE_ADMIN_KEY || request.headers.get('x-palace-admin-key') !== process.env.PALACE_ADMIN_KEY) return NextResponse.json({ error: 'Unauthorized' }, { status: 401, headers: corsHeaders() }); try { const { key } = await request.json(); return NextResponse.json({ success: true, payload: decryptTicket(String(key || '')) }, { headers: corsHeaders() }) } catch { return NextResponse.json({ error: 'Invalid ticket' }, { status: 400, headers: corsHeaders() }) } }

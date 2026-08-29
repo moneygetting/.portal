@@ -1,0 +1,8 @@
+{
+  "name": "Student Portal API",
+  "description": "Next.js and Node.js portal API with MongoDB data and Firebase image storage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

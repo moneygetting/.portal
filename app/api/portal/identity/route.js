@@ -1,1 +1,2 @@
-export { OPTIONS, POST } from '../../palace/handshake/route.js'
+export { OPTIONS, POST } from '@/app/api/palace/handshake/route.js'
+

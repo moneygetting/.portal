@@ -1,1 +1,2 @@
-export { OPTIONS, POST } from '../../palace/media/upload-url/route.js'
+export { OPTIONS, PUT, GET } from '@/app/api/palace/media/route.js'
+
